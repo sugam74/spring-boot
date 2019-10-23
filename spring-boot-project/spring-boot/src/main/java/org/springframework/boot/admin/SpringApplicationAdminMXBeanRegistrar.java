@@ -128,7 +128,7 @@ public class SpringApplicationAdminMXBeanRegistrar implements ApplicationContext
 		MBeanServer server = ManagementFactory.getPlatformMBeanServer();
 		server.registerMBean(new SpringApplicationAdmin(), this.objectName);
 		if (logger.isDebugEnabled()) {
-			logger.debug("Application Admin MBean registered with name '" + this.objectName + "'");
+			logger.debug("Application Admin MBean registered with name :'" + this.objectName + "'");
 		}
 	}
 
